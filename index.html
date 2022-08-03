@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>SA-MP Clientside AntiCheat</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="welcome">
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li class="current"><a href="#welcome">Welcome</a></li>
+				<li><a href="#install-client">Installation Client</a></li>
+				<li><a href="#install-server">Installation Server</a></li>
+				<li><a href="#version-info">Version Information</a></li>
+			</ul>
+		</nav>
+	</aside>
+	
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>SA-MP Clientside AntiCheat</h1>
+				</div>
+				<div class="welcome">
+
+					<h2 class="twenty">Welcome to SA-MP Clientside AntiCheat</h2>
+					<p>Here you can find all the information about SA-MP Clientside/Server AntiCheat.</p>
+					<p>You can ask any question <strong><a target="_blank" href="https://discord.gg/Q8x6T6V">here.</a></strong></p>
+					<p>SA-MP Clientside AntiCheat created by 0xCAC and his team.</p>
+					<p>This website was designed by <code>mickzz</code>.</p>
+				</div>
+
+				<div class="features">
+					<h2 class="twenty">Current Version</h2>
+					<pre class="brush: html">
+						Author:            0xCAC
+						Discord: 		   https://discord.gg/Q8x6T6V
+						Client Version:    v0.10.0
+						Server Version:    v0.10.0
+						Compatible with:   SA-MP 0.3.7 Server (R1)</pre>
+				</div>
+			</section>
+
+			<section id="install-client">
+				<div class="content-header">
+					<h1>Installation Clientside AntiCheat</h1>
+				</div>
+				<h2 class="title">Installing SAMPCAC</h2>
+
+				<div class="features">
+					<ul>
+						<li>Download and install this version the Grand Theft Auto: San Andreas. <strong>Download <a target="_blank" href="https://mickzz.xyz/downloads/GTA-San-Andreas.rar">here</a>.</strong></li>
+						<li>Download and install SA-MP 0.3.7-R1 Client. <strong>Download <a target="_blank" href="https://mickzz.xyz/downloads/sa-mp-0.3.7-install.exe">here</a>.</strong></li>
+						<li>Download and install SA-MP Clientside AntiCheat (v0.10.0). <strong>Download <a target="_blank" href="https://mickzz.xyz/downloads/sampcac-v0.10.0-installer.exe">here</a>.</strong></li>
+						<li>Download and insert crack: gta_sa.exe. <strong>Download <a target="_blank" href="https://mickzz.xyz/downloads/gta_sa.rar">here</a>.</strong></li>
+					</ul>
+				</div>
+
+			</section>
+			<section id="install-server">
+				<div class="content-header">
+					<h1>Installation Server AntiCheat</h1>
+				</div>
+				<h2 class="title">Installing Server Version</h2>
+
+				<div class="features">
+					<ul>
+						<li>Download files from server. <strong>Download <a target="_blank" href="https://mickzz.xyz/downloads/sampcac-v0.10.0-server.zip">here</a>.</strong></li>
+						<li>Move the files to your server folder and add plugins in server.cfg.</li>
+						<pre class="brush: html">
+							plugins sampcac_server     (Windows)
+							plugins sampcac_server.so  (Linux - Ubuntu - Debian)</pre>
+					</ul>
+				</div>
+			</section>
+			<section id="version-info">
+				<div class="content-header">
+					<h1>Version Information</h1>
+				</div>
+				<pre class="brush: html">
+					SAMPCAC v0.02 released.
+ 					 * fixed C-Bug
+					 * improved cheats detection</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.03 released.
+					 * improved cheats detection</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.04 released.
+					 * General:
+					   * fake ping is now blocked and reported to server (see CAC_CHEAT__FAKE_PING_1 in sampcac.inc)
+					 * Client:
+					   * fixed a bug that could block players from shooting when they crouch
+					   * security improvements
+					 * Server:
+					   * fixed a potential crash when getting kicked</pre>
+				<pre class="brush: html">		
+					SAMPCAC v0.05 released.
+					 * SAMPCAC now detects modded game models (eg: skins, weapons | transparent textures)
+					   * load: sampcac_gameresource.pwn
+					   * see: sampcac_gameresource.ini
+					   * also search for GAMERESOURCE in sampcac.inc
+					 * added manual weapon reloading game option
+					   * reload your weapons anytime by pressing R (disabled by default)
+					   * see: sampcac_gameoption.ini (configure it here)
+					   * also search for MANUALRELOADING in sampcac.inc
+					 * macro detection can be deactivated for specific keys (eg: media keys)
+					   * media keys are ignored by default (since a guy reported that these are getting detected as macros)
+					   * see: sampcac_base.ini (end of file)
+					 * SAMPCAC is now fully(?) compatible with LINK/2012's modloader (no more random crashes)
+					 * fixed some false detections
+					 * more protections against cheats (ESPs/wallhacks)</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.05.1 released.
+					 * Fraps, MSI Afterburner/RivaTuner (and other recording softwares) are compatible again with SAMPCAC
+					 * fixed a bug that blocked weapon zooming under certain circumstances
+					 * optimized some CPU and network calls</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE 
+					SAMPCAC client v0.05.2 released.
+					 * fixes game freezing at every 1-5 seconds on low-end CPUs</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.06 released.
+					 * General:
+					   * weapon info changes (eg: accuracy, fire range etc) are now detected and blocked (see CAC_CHEAT__WEAPON_INFO_1 in sampcac.inc)
+					   * no-recoil is now detected (see CAC_CHEAT__NORECOIL_* in sampcac.inc)
+					   * GTA:SA glitch disabler code got rewritten fixing some bugs. NOTE that some glitches behaviour got changed, so check your sampcac_glitch.ini settings in-game and edit them before updating your servers.
+					 * Client:
+					   * changed dependencies install order (now DirectX gets installed before MSVC Redist)
+					   * attempted to fix some start-up crashes
+					   * security improvements</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.06.1 released.
+					 * fixed a bug from v0.1 that lead to users getting kicked for not having SAMPCAC installed
+					 * now servers can send custom warning messages when players connect with an incompatible client version (see sampcac_versioncheck.pwn)</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.06.2 released.
+					 * fixed a crash after loading screen</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.07 JAMES BOND EDITION :gun: released.
+					 * General:
+					   * detect 2 new types of aimbot (see CAC_CHEAT__AIMBOT_3 and CAC_CHEAT__AIMBOT_4 in sampcac.inc)
+					   * improvements in both client and server code</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.07.1 released.
+					 * fixed pistol whipping detection (it won't trigger 'Aimbot (3)' cheat anymore)</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.07.2 released.
+					 * guns that may deal damage to multiple enemies (eg: shotguns) won't raise false aimbot detections anymore
+					 * throwing nades won't trigger no-recoil detection anymore (grenades, molotovs etc)</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.07.3 released.
+					 * fixed an exploit that allowed malicious players to provoke the detection of other players as aimbotters (camera shake)</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.08 released.
+					Last SAMPCAC major update (v0.05) was released over 4 months ago and since then several big changes were made, however I didn't implement them in v0.06 or v0.07 because they would have broken backwards compatibility with old scripts.
+					Since SA-MP 0.3.8 is right around the corner, I decided to release this update so I could fix any possible issues before migrating to the new SA-MP version which will most likely bring more issues by itself.
+					 
+					For server owners: 
+					 * New SAMPCAC plugin is NOT backwards compatible, so you will have to recompile your scripts and fix possible errors. If you use Att-Def server from SAMPCAC.xyz, redownload the package.
+					 * Sample filterscripts and configuration files were revised, so take a look for implementation details or undocumented changes. (hope there aren't any) Check sampcac_testscript.pwn too.
+					 * SAMPCAC docs (https://mickzz.xyz/sampcac) were revised&updated (for the first time since v0.01)
+					 * sampcac.inc is now properly documented
+					 
+					Major changes: [BREAKING BACKWARDS COMPATIBILITY]
+					 * cheat reporting natives were deemed confusing, buggy and unuseful, thus they got removed
+					 * CLEO.asi is now reported to the server instead of simply crashing the game
+					 * ... so, CLEOs may now be used.
+					 * ped.ifp mods are now detectable
+					 * CAC_ReadMemory may read up to 4 bytes max
+					 * added more game options (disabled by default), full list:
+					   * vehicle blips toggling
+					   * gun manual reloading
+					   * driving cars on water
+					   * ped fireproof (no damage from fire)
+					   * sprint toggling (no sprint, only on certain surfaces, on all surfaces)
+					   * infinite sprint
+					   * infinite oxygen
+					   * infinite ammo (no reload)
+					   * night vision effect toggling (useful for fixing NV bug)
+					   * thermal vision effect toggling (useful for fixing NV bug)
+					Other changes:
+					 * added SA-MP client version checks (you'll get an error message if you're not using 0.3.7 R1)
+					 * taking screenshots will trigger a callback in order to prevent abuse
+					 * VCRedist isn't shipped anymore, so the installer will be way smaller
+					 * CAC_ReadMemory no longer reports back garbage data for some addresses (extra code: https://hastebin.com/gepupufezu.cpp - should report back stamina left)
+					 * packets are now properly sanitized preventing malicious clients from doing unwanted memory allocations
+					   
+					For Att-Def server owners:
+					 * SAMPCAC Att-Def v1.21 server package was updated to reflect the new changes
+					 * Configuration files were edited, so check (and tweak) them before updating
+					 * There is a new command for level 1 admins: /gameoption</pre>
+				<pre class="brush: html">
+					 SERVER v0.07 QUICK FIX
+					 All SAMPCAC server versions prior to v0.08 contain a bug that may be exploited by malicious users to crash the server. Since v0.08 isn't widely used yet, I backported the fix to v0.07.
+					 If you're still on v0.07, update the plugin ASAP.</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.08.1 released.
+					 * fixed server joining bug (Server closed the connection)</pre>
+				<pre class="brush: html">
+					SERVER UPDATE
+					SAMPCAC server v0.08.1 released.
+					 * fixed an exploit which could lead to server crash</pre>
+				<pre class="brush: html">
+					SERVER UPDATE
+					SAMPCAC server v0.08.2 released.
+					 * content[] is now correctly passed to CAC_OnMemoryRead</pre>
+				<pre class="brush: html">
+					CLIENT UPDATE
+					SAMPCAC client v0.08.2 released.
+					 * damage given to in-vehicle players is now properly detected, meaning that:
+					   * passengers will take damage
+						 * Aimbot (3) won't cause false positives anymore</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.09 released.
+					 * fixed a bug that caused the client not to load on some PCs
+					 * fixed a bug that caused players to be autokicked for using keybinders
+					 * DirectX updater is now an optional installer component
+					 * changed how installer handles files
+					 * various server and client improvements</pre>
+				<pre class="brush: html">
+					SAMPCAC v0.10 released.
+					Added new detections for:
+					 * no-recoil (#3)
+					 * aimbot (#5 and #6)
+					 * various actions that will mark the client as untrusted. Note: a clean SA-MP installation would NEVER get marked as untrusted, so it is safe to assume that such a client is malicious.
+					Other changes:
+					 * CAC__MAX_HARDWARE_ID was increased to 64
+					 * in case CAC_ReadMemory fails clientside (eg: non-readable memory), CAC_OnMemoryRead will get called with parameter size = 0
+					 * plugin will print a warning message if the version of sampcac.inc doesn't match plugin version
+					 * fixed a bug that lead to incorrect cheat detections
+					 * fixed a crash that would occur due to excessive keybinder usage
+					 * minor improvements to sample scripts
+					For server owners:
+					 * if you wrote your own detection scripts, recompile them with the new sampcac.inc and make sure that the new cheat ids are properly handled
+					 * if you use the default filterscripts, replace them and their configuration files with the ones provided in the server package
+					 * if you use Att-Def server from SAMPCAC.xyz, redownload the entire package</pre>
+			</section>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all()
+	</script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
